@@ -1,0 +1,402 @@
+body {
+  margin: 0px;
+  font-family: Montserrat, sans-serif;
+  color: #000;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  font-weight: 400;
+  letter-spacing: 0.6em;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+  font-size: 5.6em;
+  line-height: 1.1em;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #4b1f4f;
+  font-size: 2.5em;
+  line-height: 30px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  max-height: 800px;
+  padding-bottom: 70px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: url('../images/divisao-hero.svg'), url('../images/imagem-hero.jpg');
+  background-position: 50% 101%, 50% 50%;
+  background-size: 100%, cover;
+  background-repeat: no-repeat, repeat;
+}
+
+.container {
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.container.columns-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.container.hero-conatiner {
+  width: 85%;
+}
+
+.hero-contents-wrapper {
+  width: 34vw;
+  margin-left: auto;
+}
+
+.btn {
+  padding: 11px 25px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #fff;
+  border-radius: 100px;
+  background-color: transparent;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn.no-border {
+  padding-right: 35px;
+  padding-left: 35px;
+  margin-top: 15px;
+  border-width: 0px;
+}
+
+.hero-subtitle {
+  margin-bottom: 35px;
+}
+
+.work-section {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-color: #f1f1f3;
+  background-image: url('../images/MEUSTRABALHOS.svg');
+  background-position: 100% 0%;
+  background-size: 50vw;
+  background-repeat: no-repeat;
+}
+
+.works-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 45px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+}
+
+.work {
+  position: relative;
+  width: 31%;
+  height: 20vw;
+  margin-right: 0.5vw;
+  margin-bottom: 1vw;
+  margin-left: 0.5vw;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  transition: All 0.5s ease;
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+}
+
+.work.one {
+  background-image: url('../images/trabalho-um.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.work.two {
+  background-image: url('../images/trabalho-dois.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.work.three {
+  background-image: url('../images/trabalho-tres.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.work.four {
+  background-image: url('../images/trabalho-quatro.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.work.five {
+  background-image: url('../images/trabalho-cinco.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.work.six {
+  background-image: url('../images/trabalho-seis.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.work-cover {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 35px;
+  background-color: rgba(87, 25, 82, 0.83);
+  opacity: 0;
+  transition: All 0.5s ease;
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+}
+
+.work:hover .work-cover {
+    opacity: 1;
+}
+
+.website-name {
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 1.9em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.website-link {
+  color: #fff;
+  font-size: 1em;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.contact-section {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-color: #751d6d;
+}
+
+.column {
+  width: 50%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.profile-pic {
+  width: 90%;
+}
+
+.about-paragraph {
+  margin-top: 35px;
+  font-size: 1.2em;
+  line-height: 1.7em;
+}
+
+.social-wrapper {
+  margin-top: 35px;
+}
+
+.social-icon {
+  margin-right: 30px;
+}
+
+.social-icon img {
+  width: 24px;
+}
+
+.about-section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-image: url('../images/SOBREMIM.svg');
+  background-position: 100% 17%;
+  background-size: 28vw;
+  background-repeat: no-repeat;
+}
+
+.contact-heading {
+  color: #fff;
+  text-align: center;
+}
+
+.contact-links-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 45px;
+}
+
+.contact-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.8em;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.contact-link img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 991px) {
+  .hero {
+    background-position: 50% 101%, 50% 50%;
+  }
+  .hero-contents-wrapper {
+    width: 71%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .work {
+    height: 27vw;
+  }
+  .website-name {
+    font-size: 1.6em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    background-position: 50% 101%, 100% 50%;
+  }
+  .container.columns-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .hero-contents-wrapper {
+    width: 100%;
+  }
+  .work-section {
+    background-size: 82vw;
+  }
+  .works-wrapper {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .work {
+    width: 48%;
+  }
+  .column {
+    width: 90%;
+  }
+  .profile-pic {
+    display: block;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  h2 {
+    font-size: 3.7em;
+  }
+  .container.hero-conatiner {
+    width: 100%;
+  }
+  .hero-contents-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .hero-subtitle {
+    font-size: 1em;
+  }
+  .work {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 15px;
+  }
+}
+
